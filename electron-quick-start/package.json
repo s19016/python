@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "webpack"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,15 +18,19 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "electron": "^7.1.10",
-    "webpack": "^4.41.5"
+    "electron": "^6.1.3",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^16.12.0"
   }
 }
